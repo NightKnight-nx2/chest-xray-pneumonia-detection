@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pneumonia Detection AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Deep Learning Pneumonia Detector</h1>
+            <p>End-to-end PyTorch ResNet50 model deployed natively in your browser using ONNX Web Runtime.</p>
+        </header>
+
+        <main class="grid-layout">
+            <!-- Carousel Section -->
+            <section class="glass-panel carousel-section">
+                <h2>Project Walkthrough</h2>
+                <div class="carousel">
+                    <div class="carousel-inner" id="carousel-inner">
+                        <img src="/class_distribution.png" alt="Class Distribution" class="slide active">
+                        <img src="/sample_grid.png" alt="Sample Grid" class="slide">
+                        <img src="/augmentation_samples.png" alt="Augmentation Samples" class="slide">
+                        <img src="/training_curves.png" alt="Training Curves" class="slide">
+                        <img src="/confusion_matrix.png" alt="Confusion Matrix" class="slide">
+                        <img src="/gradcam_visualization.png" alt="Grad-CAM" class="slide">
+                    </div>
+                    <button class="carousel-control prev" id="prev-btn">&#10094;</button>
+                    <button class="carousel-control next" id="next-btn">&#10095;</button>
+                </div>
+            </section>
+
+            <!-- Test Upload Section -->
+            <section class="glass-panel inference-section">
+                <h2>Live Inference Engine</h2>
+                <p>Upload a Chest X-Ray image to test the trained ONNX model locally in-browser.</p>
+                
+                <div class="upload-area" id="upload-area">
+                    <input type="file" id="image-upload" accept="image/*" />
+                    <div class="upload-label">
+                        <span class="upload-icon">📁</span>
+                        <span>Click or Drag & Drop X-Ray Here</span>
+                    </div>
+                </div>
+                
+                <div class="preview-container">
+                    <img id="image-preview" src="" alt="Image Preview" style="display: none;" />
+                    <canvas id="process-canvas" width="224" height="224" style="display: none;"></canvas>
+                </div>
+
+                <div class="result-box" id="result-box" style="display: none;">
+                    <h3 id="prediction-text">Analyzing...</h3>
+                    <div class="confidence-bar">
+                        <div class="confidence-fill" id="confidence-fill"></div>
+                    </div>
+                    <span id="confidence-text">Probability</span>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>Built exclusively for the demonstration of ML Web Integrations by Antigravity.</p>
+        </footer>
+    </div>
+    <script type="module" src="./main.js"></script>
+</body>
+</html>

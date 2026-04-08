@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Virtual environment
+venv/
+env/
+.env
+.venv/
+
+# Model weights (too large for GitHub)
+*.h5
+*.pth
+*.onnx
+
+# WebAssembly binaries (too large for GitHub)
+*.wasm
+
+# Dataset (too large for GitHub)
+data/
+.env
+.venv/
+
+# Model weights (too large for GitHub)
+*.h5
+*.pth
+*.onnx
+
+# Dataset (too large for GitHub)
+data/
+
+# Logs & output
+analysis_log.txt
+artifacts/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Web build
+web/node_modules/
+web/dist/
+
+# Sensitive / local
+kaggle.json
+*.key
+*.secret

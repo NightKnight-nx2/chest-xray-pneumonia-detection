@@ -1,0 +1,39 @@
+# ──────────────────────────────────────────────────────────
+# Chest X-Ray Pneumonia Detection — Python Requirements
+# ──────────────────────────────────────────────────────────
+#
+# Install all dependencies:
+#   pip install -r requirements.txt
+#
+# ⚠️  PyTorch with CUDA (for GPU training) is NOT included here
+#     because the CUDA version must match your driver.
+#     Install it separately:
+#
+#   pip install torch torchvision torchaudio \
+#       --index-url https://download.pytorch.org/whl/cu124
+#
+#   (Replace cu124 with your CUDA version, e.g. cu118, cu121)
+#   Check available builds: https://pytorch.org/get-started/locally/
+#
+# ──────────────────────────────────────────────────────────
+
+# Core scientific stack
+numpy>=1.23
+pillow>=10.0
+
+# Computer vision
+opencv-python>=4.8
+
+# Plotting & visualization
+matplotlib>=3.8
+seaborn>=0.13
+
+# Machine learning utilities
+scikit-learn>=1.3
+
+# ONNX export & inference
+onnx>=1.15
+onnxruntime>=1.17
+
+# (Optional) TensorFlow — only needed for legacy scripts (evaluate.py, grad_cam.py, train.py)
+# tensorflow>=2.14
