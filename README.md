@@ -72,7 +72,7 @@ Trained with a proper **80/20 stratified split** from the training set (1,043 va
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/chest-xray-pneumonia-detection.git
+git clone https://github.com/NightKnight-nx/chest-xray-pneumonia-detection.git
 cd chest-xray-pneumonia-detection
 ```
 
